@@ -1,17 +1,26 @@
 {
+  "name": "msearch",
+  "productName": "mSearch",
+  "version": "1.0.0",
+  "description": "Mon navigateur Electron mSearch",
+  "author": "Mathias <ton.email@example.com>",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^26.7.0",
+    "electron-builder": "^26.7.0"
   },
   "build": {
     "appId": "com.mservices.msearch",
-    "productName": "mSearch",
-    "files": [
-      "**/*"
-    ],
     "directories": {
       "output": "dist"
     },
+    "files": [
+      "**/*"
+    ],
     "win": {
       "target": "nsis"
     },
@@ -21,8 +30,5 @@
     "linux": {
       "target": "deb"
     }
-  },
-  "devDependencies": {
-    "electron-builder": "^26.7.0"
   }
 }
