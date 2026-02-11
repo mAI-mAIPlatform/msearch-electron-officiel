@@ -1,0 +1,23 @@
+{
+  "main": "main.js",
+  "scripts": {
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.mservices.msearch",
+    "productName": "mSearch",
+    "files": ["**/*"],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "deb"
+    }
+  }
+}
