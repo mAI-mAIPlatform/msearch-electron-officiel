@@ -3,15 +3,15 @@
   "productName": "mSearch",
   "version": "1.0.0",
   "description": "Mon navigateur Electron mSearch",
-  "author": "Mathias <ton.email@example.com>",
+  "author": "Mathias <mathias@example.com>",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^26.7.0",
-    "electron-builder": "^26.7.0"
+    "electron": "^35.0.2",
+    "electron-builder": "^26.0.19"
   },
   "build": {
     "appId": "com.mservices.msearch",
